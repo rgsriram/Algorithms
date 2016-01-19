@@ -7,7 +7,7 @@ Name: Chocolate Feast
 """
 
 
-def find_chocolates(n, c, m, s):
+def find_chocolates(n, c, m):
     (t_w, r_w) = divmod(n, c)
     s = t_w
     while t_w >= m:
@@ -22,7 +22,7 @@ def main():
     for a0 in xrange(t):
         n, c, m = raw_input().strip().split(' ')
         n, c, m = [int(n), int(c), int(m)]
-        print find_chocolates(n, c, m, 0)
+        print find_chocolates(n, c, m)
 
 
 if __name__ == '__main__':
