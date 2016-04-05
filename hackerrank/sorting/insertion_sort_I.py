@@ -8,9 +8,8 @@ def insertion_sort(b):
         while hole > 0 and b[hole-1] > value:
             b[hole] = b[hole-1]
             hole -= 1
-            print ' '.join(str(x) for x in b)
         b[hole] = value
-    print ' '.join(str(x) for x in b)
+        print ' '.join(str(x) for x in b)
 
 
 def main():
