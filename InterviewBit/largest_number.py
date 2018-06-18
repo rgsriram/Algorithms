@@ -3,7 +3,7 @@ def compare(x, y):
     xy = '%s%s' % (x, y)
     yx = '%s%s' % (y, x)
 
-    return False if int(xy) > int(yx) else True
+    return -1 if int(xy) > int(yx) else 0
 
 
 def largestNumber(a):
