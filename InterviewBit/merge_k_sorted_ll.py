@@ -43,7 +43,7 @@ def merge_sorted_ll(lists):
     while len(heap):
         n = heapq.heappop(heap)
         result = linkedlist.insert(result, n.value)
-        new_index = n.index + 1
+        new_index = n.index
 
         if new_index < n.size:
             add_to_heap(heap, Node(new_index, n.arr, n.next.next, n.next.data, n.size))

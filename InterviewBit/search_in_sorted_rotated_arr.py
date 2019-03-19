@@ -50,4 +50,4 @@ def pivoted_binary_search(arr, element):
 
 
 a = [4, 5, 6, 7, 1, 2, 3]
-print pivoted_binary_search(a, 6)
+print(pivoted_binary_search(a, 6))

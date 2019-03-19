@@ -22,5 +22,6 @@ def find_no_jumps(x, y, walls):
 			d = d - (x-y)
 	return jumps
 
+
 if __name__ == '__main__':
 	find_no_jumps()

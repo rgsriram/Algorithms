@@ -109,7 +109,7 @@ class LinkedList:
 
         self.remove_duplicates(head)
 
-        print head.data if head else None
+        print(head.data) if head else None
 
         return head
 
