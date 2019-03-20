@@ -11,4 +11,10 @@ class Solution(object):
         :rtype: List[Interval]
         """
 
+        new_list = sorted(intervals, key=lambda x: x.start)
 
+        for each in new_list:
+            print(each.start)
+
+
+Solution().merge(intervals)

@@ -20,8 +20,10 @@ def merge_sorted_ll(*lists):
     heap = []
 
     for i in range(len(lists)):
-        # print(i, lists[i].data)
-        add_to_heap(heap, Node(lists[i], i))
+        print(i, lists[i])
+
+        if lists[i]:
+            add_to_heap(heap, Node(lists[i], i))
 
     i = 0
 
@@ -50,6 +52,7 @@ def print_ll(head):
         current = current.next
 
 
+
 # data = [
 #     [1, 7, 29,30],
 #     [2, 5, 6],
@@ -61,6 +64,10 @@ data = [
     [1, 4, 5],
     [1, 3, 4],
     [2, 6],
+]
+
+data = [
+    []
 ]
 
 results = []
